@@ -1,0 +1,7 @@
+{
+  "name": "@freelance-platform/shared",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "type": "commonjs"
+}
+
