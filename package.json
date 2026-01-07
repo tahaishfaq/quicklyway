@@ -1,6 +1,7 @@
 {
   "name": "quicklyway",
   "version": "1.0.0",
+  "packageManager": "npm@10.9.2",
   "private": true,
   "workspaces": [
     "frontend",
@@ -25,4 +26,3 @@
     "npm": ">=10.0.0"
   }
 }
-
