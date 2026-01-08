@@ -125,8 +125,11 @@ Create a `.env` file in the `backend/` directory:
 PORT=3001
 MONGODB_URI=mongodb://localhost:27017/quicklyway
 JWT_SECRET=your-secret-key-here
+JWT_REFRESH_SECRET=your-refresh-secret-key-here
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
+RESEND_API_KEY=re_9nFNZ2pR_Q8RDm17uBj9axve1CgQUd7pD
+EMAIL_FROM=Quicklyway <onboarding@resend.dev>
 ```
 
 ### Development
