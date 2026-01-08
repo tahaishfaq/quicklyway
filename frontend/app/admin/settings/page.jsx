@@ -10,7 +10,7 @@ import { Switch } from "@/components/ui/switch";
 
 export default function SettingsPage() {
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
+        <div className="animate-in fade-in duration-500 space-y-4">
             <div className="flex justify-between items-center mb-4 px-2">
                 <h3 className="text-xl font-normal text-foreground">System Config</h3>
                 <Badge variant="secondary" className="bg-primary/10 text-primary px-5 py-1.5 rounded-full text-xs font-normal uppercase tracking-widest border border-primary/20">
@@ -18,8 +18,8 @@ export default function SettingsPage() {
                 </Badge>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <Card className="rounded-[2rem] border-border shadow-sm flex flex-col h-full bg-card">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <Card className="border-none">
                     <CardHeader className="p-10 pb-0 border-none bg-transparent">
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 bg-blue-50 text-blue-500 rounded-[1rem] flex items-center justify-center shadow-inner border border-blue-100">
@@ -48,7 +48,7 @@ export default function SettingsPage() {
                     </CardContent>
                 </Card>
 
-                <Card className="rounded-[2rem] border-border shadow-sm flex flex-col h-full bg-card">
+                <Card className="border-none">
                     <CardHeader className="p-10 pb-0 border-none bg-transparent">
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 bg-destructive/10 text-destructive rounded-[1rem] flex items-center justify-center shadow-inner border border-destructive/20">
@@ -76,20 +76,20 @@ export default function SettingsPage() {
                     </CardContent>
 
                     <CardFooter className="px-10 pb-10">
-                        <Button className="w-full h-14 bg-primary text-primary-foreground rounded-[1.5rem] font-normal text-lg shadow-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-3">
+                        <Button className="w-full h-14 flex items-center justify-center gap-3">
                             <Save className="w-6 h-6" /> Commit Changes
                         </Button>
                     </CardFooter>
                 </Card>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {[
                     { icon: <BellRing />, title: "Notifications", color: "bg-purple-50/50 text-purple-500 border-purple-100" },
                     { icon: <Smartphone />, title: "App Config", color: "bg-indigo-50/50 text-indigo-500 border-indigo-100" },
                     { icon: <Languages />, title: "Localizations", color: "bg-orange-50/50 text-orange-500 border-orange-100" }
                 ].map((box, i) => (
-                    <Card key={i} className="rounded-[2rem] border-border shadow-sm flex items-center group cursor-pointer hover:shadow-md transition-all hover:bg-secondary/20 bg-card">
+                    <Card key={i} className="flex items-center group cursor-pointer border-none">
                         <CardContent className="p-8 flex items-center gap-4 w-full">
                             <div className={`w-12 h-12 rounded-[1rem] flex items-center justify-center transition-all group-hover:scale-110 border ${box.color}`}>
                                 {React.cloneElement(box.icon, { className: 'w-6 h-6', strokeWidth: 1.5 })}

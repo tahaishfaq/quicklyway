@@ -15,7 +15,7 @@ export default function ReviewsPage() {
     ]);
 
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
+        <div className="animate-in fade-in duration-500 space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <MetricCard title="Avg Rating" value="4.8" trend="+0.2 higher" icon={<TrendingUp />} />
                 <MetricCard title="Moderated" value="1.2k" trend="Last 30 days" icon={<CheckCircle2 />} />
@@ -23,7 +23,7 @@ export default function ReviewsPage() {
                 <MetricCard title="New Feed" value="4" trend="Just now" icon={<MessageSquare />} />
             </div>
 
-            <Card className="rounded-[2.5rem] border-border overflow-hidden shadow-sm bg-card">
+            <Card className="border-none">
                 <CardHeader className="p-10 border-b border-border flex flex-col md:flex-row justify-between items-center gap-6">
                     <CardTitle className="text-xl font-normal text-foreground">Feedback Hub</CardTitle>
                     <div className="flex gap-3">

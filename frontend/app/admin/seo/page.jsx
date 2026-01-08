@@ -17,7 +17,7 @@ export default function SEOPage() {
     ];
 
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
+        <div className="animate-in fade-in duration-500 space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <MetricCard title="Organic Traffic" value="84.2k" trend="+12% this month" icon={<TrendingUp />} />
                 <MetricCard title="Avg. Position" value="4.2" trend="Improved by 0.5" icon={<BarChart3 />} />
@@ -25,7 +25,7 @@ export default function SEOPage() {
                 <MetricCard title="Total Backlinks" value="3,450" trend="+156 new links" icon={<Link />} />
             </div>
 
-            <Card className="rounded-[2.5rem] border-border overflow-hidden shadow-sm bg-card">
+            <Card className="border-none">
                 <CardHeader className="p-8 border-b border-border flex flex-col md:flex-row justify-between items-center gap-4">
                     <div>
                         <CardTitle className="text-xl font-normal text-foreground">Keyword Tracking</CardTitle>

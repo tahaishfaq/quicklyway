@@ -23,15 +23,15 @@ export default function UsersPage() {
     };
 
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="animate-in fade-in duration-500 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <MetricCard title="Active Clients" value="28.4k" trend="4% increase" icon={<UsersIcon />} />
                 <MetricCard title="Providers" value="12.4k" trend="2.1% higher" icon={<Briefcase />} />
                 <MetricCard title="New Signups" value="86" trend="+12 vs yesterday" icon={<UserPlus />} />
                 <MetricCard title="Blocked Users" value="412" trend="Manual review" icon={<UserMinus />} />
             </div>
 
-            <Card className="rounded-[2.5rem] border-border overflow-hidden shadow-sm">
+            <Card className="border-none">
                 <CardHeader className="p-8 border-b border-border flex flex-col md:flex-row justify-between items-center gap-6">
                     <div>
                         <CardTitle className="text-xl font-normal text-foreground">User Registry</CardTitle>

@@ -16,21 +16,21 @@ export default function AdminsPage() {
     ]);
 
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="animate-in fade-in duration-500 space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <MetricCard title="Staff Members" value={mockAdmins.length.toString()} trend="Full authorization" icon={<ShieldCheck />} />
                 <MetricCard title="Super Users" value="1" trend="Global reach" icon={<ShieldCheck />} />
                 <MetricCard title="Support Team" value="1" trend="Active queue" icon={<Headphones />} />
                 <MetricCard title="Online Status" value="1" trend="Live command" icon={<Activity />} />
             </div>
 
-            <Card className="rounded-[2.5rem] border-border overflow-hidden shadow-sm">
+            <Card className="border-none overflow-hidden ">
                 <CardHeader className="p-8 border-b border-border flex flex-col md:flex-row justify-between items-center gap-6">
                     <div>
                         <CardTitle className="text-xl font-normal text-foreground">Admin Command</CardTitle>
                         <p className="text-muted-foreground font-normal mt-0.5 text-sm">Staff authorization and permission control</p>
                     </div>
-                    <Button className="h-11 px-6 bg-primary text-primary-foreground rounded-[1rem] shadow-lg shadow-primary/20 hover:bg-primary/90">
+                    <Button className="h-11">
                         <Plus className="w-5 h-5 mr-2" strokeWidth={2} /> Add Staff
                     </Button>
                 </CardHeader>

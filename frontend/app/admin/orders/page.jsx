@@ -16,7 +16,7 @@ export default function OrdersPage() {
     ];
 
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
+        <div className="animate-in fade-in duration-500 space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <MetricCard title="Market Vol." value="$12.4k" trend="High liquidity" icon={<TrendingUp />} />
                 <MetricCard title="Active Orders" value="28" trend="Steady flow" icon={<ShoppingCart />} />
@@ -24,7 +24,7 @@ export default function OrdersPage() {
                 <MetricCard title="Delivered" value="142" trend="Verified" icon={<Package />} />
             </div>
 
-            <Card className="rounded-[2rem] border-border overflow-hidden shadow-sm bg-card">
+            <Card className="border-none">
                 <CardHeader className="p-8 border-b border-border">
                     <CardTitle className="text-xl font-normal text-foreground">Job Ledger</CardTitle>
                 </CardHeader>

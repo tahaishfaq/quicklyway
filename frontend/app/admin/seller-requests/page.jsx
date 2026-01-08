@@ -53,7 +53,7 @@ export default function AdminSellerRequests() {
     };
 
     return (
-        <div className="space-y-8 animate-in fade-in duration-500">
+        <div className="space-y-4 animate-in fade-in duration-500">
             <div className="flex justify-between items-center">
                 <div>
                     <h2 className="text-3xl font-normal text-foreground tracking-tight">Seller Requests</h2>
@@ -67,7 +67,7 @@ export default function AdminSellerRequests() {
                 </div>
             </div>
 
-            <Card className="rounded-[2rem] border-border overflow-hidden shadow-sm bg-card">
+            <Card className="border-none">
                 <CardHeader className="p-8 border-b border-border bg-secondary/10">
                     <CardTitle className="text-xl font-normal">Requests List</CardTitle>
                     <CardDescription className="font-normal">{requests.length} applications awaiting review</CardDescription>

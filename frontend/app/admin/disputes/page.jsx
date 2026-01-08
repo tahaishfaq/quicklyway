@@ -14,16 +14,16 @@ export default function DisputesPage() {
     ];
 
     return (
-        <div className="animate-in fade-in duration-500 space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="animate-in fade-in duration-500 space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <MetricCard title="Critical" value="2" trend="Active priority" icon={<AlertTriangle className="text-destructive" />} />
                 <MetricCard title="Moderate" value="14" trend="Pending review" icon={<ShieldAlert className="text-orange-500" />} />
                 <MetricCard title="Resolved" value="86" trend="Total solved" icon={<ShieldCheck />} />
                 <MetricCard title="Safe Ratio" value="98%" trend="Trusted score" icon={<Activity />} />
             </div>
 
-            <Card className="rounded-[2.5rem] border-border shadow-sm overflow-hidden bg-card">
-                <CardHeader className="p-10 border-b border-border flex flex-row justify-between items-center bg-card">
+            <Card className="border-none">
+                <CardHeader className="p-10 border-b rounded-t-[1.5rem] border-border flex flex-row justify-between items-center bg-card">
                     <CardTitle className="text-xl font-normal text-foreground">Case Unit</CardTitle>
                     <Button variant="outline" className="px-6 py-2 bg-secondary/50 text-muted-foreground rounded-full text-[10px] font-normal uppercase tracking-widest hover:bg-secondary transition-all h-auto border-border">
                         Audit Log

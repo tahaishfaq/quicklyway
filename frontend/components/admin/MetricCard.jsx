@@ -3,7 +3,7 @@ import { ArrowUp } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 export const MetricCard = ({ title, value, trend, icon }) => (
-    <Card className="rounded-[1.5rem] border-border shadow-sm flex flex-col transition-all duration-300 hover:shadow-md relative group h-fit">
+    <Card className=" border-none">
         <CardContent className="p-4">
             <div className="flex justify-between items-start ">
                 <div className="space-y-1">
